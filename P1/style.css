@@ -1,0 +1,38 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+
+.light-theme{
+    background-color: beige;
+    border:1px solid rgb(200, 200, 215);
+    padding: 10px;
+    height: 300px;
+    
+}
+.dark-theme{
+    background-color: rgb(51, 51, 50);
+    border:1px solid rgb(200, 200, 215);
+    padding: 10px;
+    height: 300px;
+    
+}
+.image {
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.first-image{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjfnJIvjeVqiV71-ixV-Qvp8M2zlB65-btq8ErOKHpNI7xMJkF9UuOcM&s=10");
+}
+.second-image{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI1jqBY0_lCxQbOKJ1UxSvW1HlCo7FZ9buVPdI7OOpGQ&s=10");
+}
+.third-image{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjfnJIvjeVqiV71-ixV-Qvp8M2zlB65-btq8ErOKHpNI7xMJkF9UuOcM&s=10");
+}

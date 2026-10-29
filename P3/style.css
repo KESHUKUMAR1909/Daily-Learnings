@@ -1,56 +1,46 @@
 .grid-container {
     box-sizing: border-box;
-    width: 800px;
+    width: 100%;             /* Changed from 800px to fill the screen fluidly */
+    max-width: 800px;        /* Keeps your original size on large screens */
+    margin: 0 auto;          /* Centers the layout on large screens */
     padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    /* grid-template-rows: 200px 200px 200px; */
-    grid-template-areas:
-        "header header header"
-        "menu content ad"
-        "footer footer footer";
-
-    background-color: antiquewhite;
     gap: 10px;
-    /* justify-items: center; */
+    background-color: antiquewhite;
+    
+    /* 1. Mobile-First Layout: Stack everything into 1 single column */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "menu"
+        "content"
+        "ad"
+        "footer";
 }
 
-.header {
+/* 2. Desktop Layout: Switch to 3 columns when screen is wider than 600px */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "menu   content ad"
+            "footer footer footer";
+    }
+}
+
+/* Base item styles remain completely clean and untouched */
+.header, .menu, .ad, .content, .footer {
     box-sizing: border-box;
-    grid-area: header;
-    background-color: blue;
     padding: 10px;
 }
 
-.menu {
-    box-sizing: border-box;
-    grid-area: menu;
-    background-color: red;
-    padding: 10px;
-}
+.header  { grid-area: header; background-color: blue; }
+.menu    { grid-area: menu; background-color: red; }
+.ad      { grid-area: ad; background-color: yellow; }
+.content { grid-area: content; background-color: green; }
+.footer  { grid-area: footer; background-color: rgb(171, 26, 26); }
 
-.ad {
-    box-sizing: border-box;
-    grid-area: ad;
-    background-color: yellow;
-    padding: 10px;
-}
-
-.content {
-    box-sizing: border-box;
-    grid-area: content;
-    background-color: green;
-    padding: 10px;
-}
-
-.footer {
-    box-sizing: border-box;
-    grid-area: footer;
-    background-color: rgb(171, 26, 26);
-    padding: 10px;
-}
-
-.border{
-    border: 5px solid black;
-    border-style: dotted;
+.border {
+    border: 5px dotted black;
 }

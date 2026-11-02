@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Small Project and Also Some loader Practise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="container flex flex-row w-screen ">
+       <div class="sidebar fixed top-0 left-0 w-[20%] h-screen
+            flex flex-col bg-sky-950 overflow-y-auto">
+            <div class="logo-container text-white text-3xl cursor-pointer rounded-[2px] pl-2 pt-2 mb-10">Logo </div>
+
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <div class="heading p-2">
+
+
+                <!-- Details will create a group and make a clickable component  where group will help us to on open perform any action  -->
+                <details class="group">
+
+                    <!-- Summary is my clickable headiing -->
+                    <summary
+                        class="main-item-container list-none text-white text-2xl cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                        <div class="flex justify-between items-center">
+                            <h1>Dashboard</h1>
+                            <span class="transition-transform duration-300 group-open:rotate-180">
+                                ▼
+                            </span>
+                        </div>
+                    </summary>
+
+                    <div class="main-item ml-10 flex flex-col gap-[3px] mt-2">
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Score
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Items
+                        </p>
+                        <p
+                            class="text-xl text-white cursor-pointer hover:bg-[oklch(78.5%_0.115_274.713)] rounded-[2px] p-1">
+                            Mapping
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+
+        </div>
+        <div class="main-container ml-[20%] w-[80%] min-h-screen
+            flex flex-col bg-[white] overflow-hidden overflow-y-auto">
+            <div
+                class="search-bar flex flex-row gap-2 h-[10vh] p-4 w-[100%] border-b-2 border-blue-200 justify-between">
+                <div class="main-search-bar w-[70%]">
+                    <input class="border rounded-[10px] w-[100%] p-2" placeholder="enter your search here ....">
+                </div>
+                <div class="profile-area w-[15%] flex flex-row gap-2">
+                    <div class="logo-name border w-[25%]  flex items-center justify-center p-2 rounded-[100%]"> KK
+                    </div>
+                    <div class="image-container w-[25%] ">
+                        <img class="border w-full h-full  flex items-center justify-center  rounded-[100%]"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRik35OXkFA-xSlYRi4vXX2YyDpf8sOJxDszS8BA7wsglpCHOBzCRZwVgZG&s=10">
+                    </div>
+                </div>
+            </div>
+            <div class="content-area h-[90vh]">
+                <div class="kpi cards w-[100%] flex flex-row justify-around h-[20vh] mt-8 pb-2 border-b-2 border-blue-200  ">
+                    <div
+                        class="kpi-card w-[20%] flex flex-col justify-around h-[100%] p-4 bg-[#f8f7ed] min-h-full box-border rounded-[20px] ">
+                        <div class="icon h-[40%] w-full flex justify-start">
+                            <img class="h-full w-1/2 object-contain object-left" src="./genetic-data-svgrepo-com.svg"
+                                alt="Genetic data" />
+                        </div>
+                        <div class="text  w-[100%] h-[80%] flex flex-row justify-between">
+                            <div>
+                                <h1>₹4000</h1>
+                                <p>Total Views</p>
+                            </div>
+                            <div>
+                                <h1>&nbsp</h1>
+                                <p class="text-green-500">₹0.34</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kpi-card w-[20%] flex flex-col justify-between h-[100%] p-4 bg-[#f8f7ed] rounded-[20px] ">
+                         <div class="icon h-[40%] w-full flex justify-start">
+                            <img class="h-full w-1/2 object-contain object-left" src="./genetic-data-svgrepo-com.svg"
+                                alt="Genetic data" />
+                        </div>
+                        <div class="text  w-[100%] h-[80%] flex flex-row justify-between">
+                            <div>
+                                <h1>₹4000</h1>
+                                <p>Total Views</p>
+                            </div>
+                            <div>
+                                <h1>&nbsp</h1>
+                                <p class="text-green-500">₹0.34</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kpi-card w-[20%] flex flex-col justify-between h-[100%] p-4 bg-[#f8f7ed] rounded-[20px]">
+                        <div class="icon h-[40%] w-full flex justify-start">
+                            <img class="h-full w-1/2 object-contain object-left" src="./genetic-data-svgrepo-com.svg"
+                                alt="Genetic data" />
+                        </div>
+                        <div class="text  w-[100%] h-[80%] flex flex-row justify-between">
+                            <div>
+                                <h1>₹4000</h1>
+                                <p>Total Views</p>
+                            </div>
+                            <div>
+                                <h1>&nbsp</h1>
+                                <p class="text-green-500">₹0.34</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kpi-card w-[20%] flex flex-col justify-between h-[100%] p-4 bg-[#f8f7ed] rounded-[20px] ">
+                         <div class="icon h-[40%] w-full flex justify-start">
+                            <img class="h-full w-1/2 object-contain object-left" src="./genetic-data-svgrepo-com.svg"
+                                alt="Genetic data" />
+                        </div>
+                        <div class="text  w-[100%] h-[80%] flex flex-row justify-between">
+                            <div>
+                                <h1>₹4000</h1>
+                                <p>Total Views</p>
+                            </div>
+                            <div>
+                                <h1>&nbsp</h1>
+                                <p class="text-green-500">₹0.34</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-area w-[100%] h-[50vh] flex flex-row flex-wrap ">
+                    <div class="chart-1 w-[50%] h-[80%]">
+                        <img   class="h-[100%]" src="https://media.licdn.com/dms/image/v2/D5612AQHsiXl3TbHE3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1733469107449?e=2147483647&v=beta&t=uFg4guD86gTCSuZwCuVnJqbHRcneTDQP_DQ_H1VYEW0" />
+                    </div>
+                   <div class="chart-1 w-[50%] h-[80%]">
+                        <img   class="h-[100%]" src="https://media.licdn.com/dms/image/v2/D5612AQHsiXl3TbHE3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1733469107449?e=2147483647&v=beta&t=uFg4guD86gTCSuZwCuVnJqbHRcneTDQP_DQ_H1VYEW0" />
+                    </div>
+                    <div class="chart-1 w-[50%] h-[80%]">
+                        <img   class="h-[100%]" src="https://media.licdn.com/dms/image/v2/D5612AQHsiXl3TbHE3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1733469107449?e=2147483647&v=beta&t=uFg4guD86gTCSuZwCuVnJqbHRcneTDQP_DQ_H1VYEW0" />
+                    </div>
+                    <div class="chart-1 w-[50%] h-[80%]">
+                        <img   class="h-[100%]" src="https://media.licdn.com/dms/image/v2/D5612AQHsiXl3TbHE3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1733469107449?e=2147483647&v=beta&t=uFg4guD86gTCSuZwCuVnJqbHRcneTDQP_DQ_H1VYEW0" />
+                    </div>
+
+                  
+                </div>
+                <div class="profile-area">
+                    <div class="our-client">
+
+                    </div>
+                    <div class="users">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
